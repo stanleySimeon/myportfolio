@@ -164,19 +164,24 @@ Projects.forEach((project) => {
   });
 });
 
+const slideUp = document.querySelector('.arrow__Down');
+const slideDown = document.querySelector('.arrow__Right__00');
+const Slider = document.querySelector('.Slider');
+
 document.addEventListener('click', (e) => {
-  const slideUp = document.querySelector('#arrow__Down');
-  const slideDown = document.querySelector('#arrow__Right__00');
   if (e.target === slideUp) {
-    document.getElementById('languagesItems').remove();
+    document.getElementById('languagesItems').style.display = 'none';
     slideUp.style.display = 'none';
     slideDown.style.display = 'block';
-  } else if (e.target === slideDown) {
-    window.location.reload();
+    Slider.style.borderBottom = '1.5px solid #e6e6e6';
+    Slider.style.marginTop = '10px';
+    Slider.style.marginBottom = '10px';
+  } else if (e.target.id === 'arrow__Right__00') {
+    document.getElementById('languagesItems').style.display = 'block';
     slideDown.style.display = 'none';
-    slideUp.style.display = 'block';
+    slideUp.style.display = 'flex';
+    Slider.style.borderBottom = 'none';
   }
-  e.preventDefault();
 });
 
 const formValidation = document.querySelector('#formContainer');
