@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/png" href="./asset/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./popup.css">
+    <script src="./index.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-90K7L4LZ2P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-90K7L4LZ2P');
+    </script>
+    <title>mstanley</title>
+</head>
+
+<body>
+    <main id="root">
+        <header>
+            <nav class="navbar">
+                <div id="logo">
+                    <a href="#index"><img src="./asset/default-monochrome-white.svg" class="svgColor" alt="logo" /></a>
+                </div>
+                <i class="fa fa-bars toggle"></i>
+                <ul class="nav-items" id="items">
+                    <li class="item"><a href="#works-container" class="link">Portfolio</a></li>
+                    <li class="item"><a href="#about-container" class="link">About</a></li>
+                    <li class="item"><a href="#contactContainer" class="link">Contact</a></li>
+                    <li><i class="fa fa-times closeToggle"></i></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="index">
+            <div class="container">
+                <h1>
+                    I'm Stanley <br />
+                    Glad to see you!
+                </h1>
+                <p>
+                    I’m a software developer! I can help you build a product , feature
+                    or website Look through some of my work and experience! If you like
+                    what you see and have a project you need coded, don’t hesitate to
+                    contact me.
+                </p>
+                <br />
+
+                <h4 class="letsConnect">LET'S CONNECT</h4>
+                <ul class="icon_link_container">
+                    <li>
+                        <a href="https://twitter.com/mstanleyme" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-twitter brand"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/stanleysimeon" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-linkedin brand"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/stanleySimeon" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-github brand"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://angel.co/u/stanleysimeon" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-angellist brand"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Popup Window-->
+        <div class="popupWindow" id="popupWindow">
+        </div>
+        <!--End of Popup Window-->
+        <section class="portfolioCard" id="works-container">
+            <!---works container-->
+            <h2>JS should be enabled in your browser</h2>
+        </section>
+        <section id="about-container">
+            <div class="aboutContainer">
+                <div class="aboutLeftContainer">
+                    <h2 class="about-title">
+                        About <br />
+                        Myself
+                    </h2>
+                    <p class="about-description">
+                        Hello I’m a software developer! I can help you build a product ,
+                        feature or website Look through some of my work and experience! If
+                        you like what you see and have a project you need coded, don’t
+                        hesitate to contact me.
+                    </p>
+                    <h4 class="letsConnect">LET'S CONNECT</h4>
+                    <ul class="icon_link_container">
+                        <li>
+                            <a href="https://twitter.com/mstanleyme" target="_blank" rel="noopener noreferrer"><i
+                                    class="fa fa-twitter brand"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/stanleysimeon" target="_blank"
+                                rel="noopener noreferrer"><i class="fa fa-linkedin brand"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/stanleySimeon" target="_blank" rel="noopener noreferrer"><i
+                                    class="fa fa-github brand"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://angel.co/u/stanleysimeon" target="_blank" rel="noopener noreferrer"><i
+                                    class="fa fa-angellist brand"></i></a>
+                        </li>
+                    </ul>
+                    <button class="getResume" type="submit">Get my resume</button>
+                </div>
+
+                <div id="languagesSlider" class="aboutRightContainer">
+                    <div class="Slider">
+                        Languages
+                        <img src="./asset/arowB.png" alt="arrow bottom icon" id="arrow__Down" />
+                    </div>
+                    <ul id="languagesItems">
+                        <li class="item">
+                            <img class="icon" src="./asset/javaScript.png" alt="JavaScript icon" />
+                            <p class="name">JavaScript</p>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./asset/html5.png" alt="HTML5 icon" />
+                            <p class="name">HTML</p>
+                        </li>
+                        <li class="item">
+                            <img class="icon" src="./asset/css3.png" alt="CSS3 icon" />
+                            <p class="name">CSS</p>
+                        </li>
+                    </ul>
+                    <ul class="skills__and__frameworks">
+                        <li class="frameworks">
+                            Frameworks
+                            <img src="./asset/arowR.png" alt="arrow bottom icon" id="arrow__Right__001" />
+                        </li>
+                        <li class="skills">
+                            Skills
+                            <img src="./asset/arowR.png" alt="arrow bottom icon" id="arrow__Right__002" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contactContainer">
+            <div id="contactItems">
+                <div id="descriptionCard">
+                    <h2 class="contact__title">Contact me</h2>
+                    <p class="contact__description">
+                        If you have an application you are interested in developing, a
+                        feature that you need built or a project that needs coding. I’d
+                        love to help with it.
+                    </p>
+                </div>
+                <form action="https://formspree.io/f/xpzbqlab" method="POST" autocomplete="off" id="formContainer">
+                    <label class="label" for="username">Username</label>
+                    <input id="username" class="inputItem" name="username" type="text" maxlength="30"
+                        placeholder="Full Name" required />
+                    <label class="label" for="email">Email</label>
+                    <input id="email" class="inputItem" name="email" type="email" value=""
+                        placeholder="johndoe@gmail.com" required />
+                    <label class="label" id="inputMmessage" for="msg">Message</label>
+                    <textarea class="inputMessageBox" name="msg" id="msg" maxlength="500" cols="20" rows="10"
+                        placeholder="Write your message here..." required>
+                    </textarea>
+                    <button class=" get-touch-btn" type="submit">Get It Touch</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <p>Stanley SIMEON &copy; Copyright 2022</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
