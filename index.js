@@ -164,6 +164,21 @@ Projects.forEach((project) => {
   });
 });
 
+document.addEventListener('click', (e) => {
+  const slideUp = document.querySelector('#arrow__Down');
+  const slideDown = document.querySelector('#arrow__Right__00');
+  if (e.target === slideUp) {
+    document.getElementById('languagesItems').remove();
+    slideUp.style.display = 'none';
+    slideDown.style.display = 'block';
+  } else if (e.target === slideDown) {
+    window.location.reload();
+    slideDown.style.display = 'none';
+    slideUp.style.display = 'block';
+  }
+  e.preventDefault();
+});
+
 const formValidation = document.querySelector('#formContainer');
 const emailInputValidation = document.querySelector('#email');
 const entryTextMessage = document.querySelector('#inputMessage');

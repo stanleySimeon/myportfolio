@@ -363,6 +363,10 @@
     line-height: 24px;
   }
 
+  .Slider #arrow__Right__00 {
+    display: none;
+  }
+
   #languagesItems,
   li {
     width: 100%;
