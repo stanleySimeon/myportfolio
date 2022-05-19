@@ -361,9 +361,11 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
   }
 
-  .Slider #arrow__Right__00 {
+  .Slider .arrow__Down {
     display: none;
   }
 
@@ -372,6 +374,8 @@
     width: 100%;
     margin: 30px 0;
     font-size: 1.2rem;
+    display: none;
+    transition: top 0.3s ease-in-out;
   }
 
   #languagesItems .item {

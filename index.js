@@ -164,19 +164,18 @@ Projects.forEach((project) => {
   });
 });
 
-const slideUp = document.querySelector('.arrow__Down');
-const slideDown = document.querySelector('.arrow__Right__00');
-const Slider = document.querySelector('.Slider');
-
 document.addEventListener('click', (e) => {
+  const slideUp = document.querySelector('.arrow__Down');
+  const slideDown = document.querySelector('.arrow__Right__00');
+  const Slider = document.querySelector('.Slider');
   if (e.target === slideUp) {
     document.getElementById('languagesItems').style.display = 'none';
     slideUp.style.display = 'none';
     slideDown.style.display = 'block';
-    Slider.style.borderBottom = '1.5px solid #e6e6e6';
     Slider.style.marginTop = '10px';
+    Slider.style.borderBottom = '1px solid #d1d1d1';
     Slider.style.marginBottom = '10px';
-  } else if (e.target.id === 'arrow__Right__00') {
+  } else if (e.target === slideDown) {
     document.getElementById('languagesItems').style.display = 'block';
     slideDown.style.display = 'none';
     slideUp.style.display = 'flex';
