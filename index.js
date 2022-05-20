@@ -168,15 +168,18 @@ document.addEventListener('click', (e) => {
   const slideUp = document.querySelector('.arrow__Down');
   const slideDown = document.querySelector('.arrow__Right__00');
   const Slider = document.querySelector('.Slider');
+  const languagesItems = document.getElementById('languagesItems');
   if (e.target === slideUp) {
-    document.getElementById('languagesItems').style.display = 'none';
+    languagesItems.style.display = 'none';
     slideUp.style.display = 'none';
     slideDown.style.display = 'block';
     Slider.style.marginTop = '10px';
     Slider.style.borderBottom = '1px solid #d1d1d1';
     Slider.style.marginBottom = '10px';
+    languagesItems.style.transition = 'all 0.2s ease-in-out';
   } else if (e.target === slideDown) {
-    document.getElementById('languagesItems').style.display = 'block';
+    languagesItems.style.display = 'block';
+    languagesItems.style.transition = 'all 0.2s ease-in-out';
     slideDown.style.display = 'none';
     slideUp.style.display = 'flex';
     Slider.style.borderBottom = 'none';
