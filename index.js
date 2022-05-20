@@ -187,13 +187,12 @@ const formValidation = document.querySelector('#formContainer');
 const emailInputValidation = document.querySelector('#email');
 const entryTextMessage = document.querySelector('#inputMessage');
 
-formValidation.addEventListener('submit', (event) => {
+formValidation.addEventListener('submit', () => {
   const strEmailInput = emailInputValidation.value;
   if (/[A-Z]/.test(strEmailInput)) {
     entryTextMessage.innerHTML = '*Your email address is not correct, email must be contain only lowercase character; ';
     entryTextMessage.style.fontSize = '1.3rem';
     entryTextMessage.style.fontStyle = 'italic';
     entryTextMessage.style.color = 'white';
-    event.preventDefault();
   }
 });
