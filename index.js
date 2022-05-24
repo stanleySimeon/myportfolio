@@ -247,7 +247,6 @@ const getLink = () => {
     }
     return false;
   });
-  console.log(link);
 };
 getLink();
 
