@@ -36,7 +36,7 @@ const Projects = [
     type: 'Front End Dev',
     date: 2022,
     description:
-            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techUse: ['html', 'css', 'javaScript'],
     projectDemo: 'https://eventwebsite.netlify.app',
     projectSource: 'https://github.com/stanleySimeon/eventWebsite',
@@ -49,7 +49,7 @@ const Projects = [
     type: 'Front End Dev',
     date: 2022,
     description:
-            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techUse: ['ReactJS', 'Redux', 'CSS'],
     projectDemo: 'https://bstore.netlify.app/',
     projectSource: 'https://github.com/stanleySimeon/bookstore ',
@@ -62,7 +62,7 @@ const Projects = [
     type: 'Front End Dev',
     date: 2022,
     description:
-            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techUse: ['ReactJS', 'CSS', 'javaScript'],
     projectDemo: 'https://kalkilanm.herokuapp.com/',
     projectSource: 'https://github.com/stanleySimeon/maths-magician ',
@@ -210,6 +210,44 @@ function mediaX() {
   }
 }
 mediaX();
+
+const Links = [
+  {
+    resumeLink: './doc/myResume.pdf',
+  },
+  {
+    jsLink: 'https://www.w3schools.com/js/',
+  },
+  {
+    cssLink: 'https://www.w3schools.com/css/default.asp',
+  },
+  {
+    htmlLink: 'https://www.w3schools.com/html/default.asp',
+  },
+];
+
+const getResumeBtn = document.querySelector('.getResume');
+const link = document.querySelectorAll('.link_pages');
+const getLink = () => {
+  const { resumeLink } = Links[0];
+  const { jsLink } = Links[1];
+  const { htmlLink } = Links[2];
+  const { cssLink } = Links[3];
+  getResumeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open(resumeLink, '_blank');
+  });
+  document.addEventListener('click', (e) => {
+    if (e.target === link[0]) {
+      window.open(jsLink, '_blank');
+    } else if (e.target === link[1]) {
+      window.open(htmlLink, '_blank');
+    } else if (e.target === link[2]) {
+      window.open(cssLink, '_blank');
+    }
+  });
+};
+getLink();
 
 const formValidation = document.querySelector('#formContainer');
 const emailInputValidation = document.querySelector('#email');
