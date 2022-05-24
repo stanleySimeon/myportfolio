@@ -219,10 +219,10 @@ const Links = [
     jsLink: 'https://www.w3schools.com/js/',
   },
   {
-    cssLink: 'https://www.w3schools.com/css/default.asp',
+    htmlLink: 'https://www.w3schools.com/html/',
   },
   {
-    htmlLink: 'https://www.w3schools.com/html/default.asp',
+    cssLink: 'https://www.w3schools.com/css/',
   },
 ];
 
@@ -245,7 +245,9 @@ const getLink = () => {
     } else if (e.target === link[2]) {
       window.open(cssLink, '_blank');
     }
+    return false;
   });
+  console.log(link);
 };
 getLink();
 
