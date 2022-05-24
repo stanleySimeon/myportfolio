@@ -222,7 +222,7 @@ const Links = [
     htmlLink: 'https://www.w3schools.com/html/',
   },
   {
-    cssLink: 'https://www.w3schools.com/css/',
+    cssLink: 'https://www.javatpoint.com/css-tutorial',
   },
 ];
 
