@@ -14,7 +14,7 @@
   background-color: #f1f5fa;
 }
 
-.arrow {
+.arrow, .Slider {
   cursor: pointer;
 }
 

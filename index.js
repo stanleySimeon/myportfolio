@@ -181,7 +181,7 @@ function mediaX() {
         Slider.style.borderBottom = '1px solid #d1d1d1';
         Slider.style.marginBottom = '10px';
         languagesItems.style.transition = 'all 0.2s ease-in-out';
-      } else if (e.target === slideDown) {
+      } else if (e.target.matches('.Slider') || e.target === slideDown) {
         languagesItems.style.display = 'flex';
         languagesItems.style.transition = 'all 0.2s ease-in-out';
         slideDown.style.display = 'none';
@@ -200,7 +200,7 @@ function mediaX() {
         slideUp.style.display = 'none';
         slideDown.style.display = 'block';
         Slider.style.borderBottom = '1px solid #d1d1d1';
-      } else if (e.target === slideDown) {
+      } else if (e.target.matches('.Slider') || e.target === slideDown) {
         languagesItems.style.display = 'block';
         slideDown.style.display = 'none';
         slideUp.style.display = 'flex';
