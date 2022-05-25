@@ -16,6 +16,7 @@
 
 .arrow, .Slider {
   cursor: pointer;
+  user-select: none;
 }
 
 @media screen and (max-width: 991px) {
