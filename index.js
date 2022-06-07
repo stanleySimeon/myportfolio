@@ -54,7 +54,7 @@ const Projects = [
     projectSource: 'https://github.com/stanleySimeon/eventWebsite',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Bookstore',
     img: './asset/bookstore.png',
     companyName: 'MSTANLEY',
