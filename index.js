@@ -30,6 +30,18 @@ document.onclick = function (event) {
 const Projects = [
   {
     id: 1,
+    name: 'Photo Gallery',
+    image: './asset/mphoto.png',
+    companyName: 'Martial Photography',
+    type: 'Front-End',
+    date: '2022',
+    description: 'A photo gallery website',
+    techUsed: 'ReactJS, HTML, CSS',
+    projectDemo: 'https://martialphoto.netlify.app/',
+    projectSource: 'https://github.com/stanleySimeon/mphoto',
+  },
+  {
+    id: 2,
     name: 'Event',
     img: './asset/eventwebsite.png',
     companyName: 'MSTANLEY',
@@ -55,7 +67,7 @@ const Projects = [
     projectSource: 'https://github.com/stanleySimeon/bookstore ',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Calculator',
     img: './asset/mathmagician.png',
     companyName: 'MSTANLEY',
@@ -255,16 +267,14 @@ const getLink = () => {
 };
 getLink();
 
-const formValidation = document.querySelector('#formContainer');
-const emailInputValidation = document.querySelector('#email');
-const entryTextMessage = document.querySelector('#inputMessage');
-
-formValidation.addEventListener('submit', () => {
-  const strEmailInput = emailInputValidation.value;
-  if (/[A-Z]/.test(strEmailInput)) {
-    entryTextMessage.innerHTML = '*Your email address is not correct, email must be contain only lowercase character; ';
-    entryTextMessage.style.fontSize = '1.3rem';
-    entryTextMessage.style.fontStyle = 'italic';
-    entryTextMessage.style.color = 'white';
+function validateForm() {
+  if (document.form.name.value === '') {
+    document.form.name.focus();
+  } else if (document.form.email.value === '') {
+    document.form.email.focus();
+  } else if (document.form.message.value === '') {
+    document.form.message.focus();
   }
-});
+  return true;
+}
+validateForm();

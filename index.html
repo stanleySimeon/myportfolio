@@ -160,18 +160,16 @@
                         love to help with it.
                     </p>
                 </div>
-                <form action="https://formspree.io/f/xpzbqlab" method="POST" autocomplete="off" id="formContainer">
+                <form action="https://formspree.io/f/xpzbqlab" method="POST" autocomplete="off" name="form" id="formContainer">
                     <label class="label" for="username">Username</label>
                     <input id="username" class="inputItem" name="username" type="text" maxlength="30"
                         placeholder="Full Name" required />
                     <label class="label" for="email">Email</label>
                     <input id="email" class="inputItem" name="email" type="email" value=""
-                        placeholder="johndoe@gmail.com" required />
-                    <label class="label" id="inputMmessage" for="msg">Message</label>
-                    <textarea class="inputMessageBox" name="msg" id="msg" maxlength="500" cols="20" rows="10"
-                        placeholder="Write your message here..." required>
-                    </textarea>
-                    <button class=" get-touch-btn" type="submit">Get It Touch</button>
+                        placeholder="johndoe@gmail.com" required/>
+                    <label class="label" id="inputMessage" for="msg">Message</label>
+                    <textarea name="msg" id="msg" class="inputMessageBox" cols="20" rows="10" maxlength="500" placeholder="Write your message here..." required></textarea>
+                    <input class="get-touch-btn" id="submitForm" type="submit" value="Get It Touch">
                 </form>
             </div>
         </section>
