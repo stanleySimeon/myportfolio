@@ -29,18 +29,6 @@ document.onclick = function (event) {
 
 const Projects = [
   {
-    id: 1,
-    name: 'Photo Gallery',
-    img: './asset/mphoto.png',
-    companyName: 'Martial Photography',
-    type: 'Front-End',
-    date: '2022',
-    description: 'A photo gallery website',
-    techUse: 'ReactJS, HTML, CSS',
-    projectDemo: 'https://martialphoto.netlify.app/',
-    projectSource: 'https://github.com/stanleySimeon/mphoto',
-  },
-  {
     id: 2,
     name: 'Event',
     img: './asset/eventwebsite.png',
@@ -78,6 +66,18 @@ const Projects = [
     techUse: ['ReactJS', 'CSS', 'javaScript'],
     projectDemo: 'https://kalkilanm.herokuapp.com/',
     projectSource: 'https://github.com/stanleySimeon/maths-magician ',
+  },
+  {
+    id: 1,
+    name: 'Photo Gallery',
+    img: './asset/mphoto.png',
+    companyName: 'Martial Photography',
+    type: 'Front-End',
+    date: '2022',
+    description: 'A photo gallery website',
+    techUse: 'ReactJS, HTML, CSS',
+    projectDemo: 'https://martialphoto.netlify.app/',
+    projectSource: 'https://github.com/stanleySimeon/mphoto',
   },
 ];
 
