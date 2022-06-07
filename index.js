@@ -31,7 +31,7 @@ const Projects = [
   {
     id: 1,
     name: 'Photo Gallery',
-    image: './asset/mphoto.png',
+    img: './asset/mphoto.png',
     companyName: 'Martial Photography',
     type: 'Front-End',
     date: '2022',
