@@ -36,7 +36,7 @@ const Projects = [
     type: 'Front-End',
     date: '2022',
     description: 'A photo gallery website',
-    techUsed: 'ReactJS, HTML, CSS',
+    techUse: 'ReactJS, HTML, CSS',
     projectDemo: 'https://martialphoto.netlify.app/',
     projectSource: 'https://github.com/stanleySimeon/mphoto',
   },
