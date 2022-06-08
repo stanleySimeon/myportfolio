@@ -37,7 +37,7 @@ const Projects = [
     date: 2022,
     description:
       'A photo gallery website that allows users to contemplate the beauty of life.',
-    techUse: ['ReactJS', 'CSS', 'javaScript'],
+    techUse: ['ReactJS', 'SCSS', 'javaScript'],
     projectDemo: 'https://martialphoto.netlify.app/',
     projectSource: 'https://github.com/stanleySimeon/mphoto/',
   },
