@@ -271,9 +271,9 @@ getLink();
 function validateForm() {
   if (document.form.name.value === '') {
     document.form.name.focus();
-  } else if (document.form.email.value === '') {
+  } if (document.form.email.value === '') {
     document.form.email.focus();
-  } else if (document.form.message.value === '') {
+  } if (document.form.message === '') {
     document.form.message.focus();
   }
   return true;

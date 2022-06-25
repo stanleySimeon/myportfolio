@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +9,7 @@
     <link rel="icon" type="image/png" href="./asset/favicon.png" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./popup.css">
+
     <script src="./index.js" defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-90K7L4LZ2P"></script>
@@ -22,21 +24,22 @@
 </head>
 
 <body>
+
+    <header>
+        <nav class="navbar">
+            <div id="logo">
+                <a href="#index"><img src="./asset/default-monochrome-white.svg" class="svgColor" alt="logo" /></a>
+            </div>
+            <i class="fa fa-bars toggle"></i>
+            <ul class="nav-items" id="items">
+                <li class="item"><a href="#works-container" class="link">Portfolio</a></li>
+                <li class="item"><a href="#about-container" class="link">About</a></li>
+                <li class="item"><a href="#contactContainer" class="link">Contact</a></li>
+                <li><i class="fa fa-times closeToggle"></i></li>
+            </ul>
+        </nav>
+    </header>
     <main id="root">
-        <header>
-            <nav class="navbar">
-                <div id="logo">
-                    <a href="#index"><img src="./asset/default-monochrome-white.svg" class="svgColor" alt="logo" /></a>
-                </div>
-                <i class="fa fa-bars toggle"></i>
-                <ul class="nav-items" id="items">
-                    <li class="item"><a href="#works-container" class="link">Portfolio</a></li>
-                    <li class="item"><a href="#about-container" class="link">About</a></li>
-                    <li class="item"><a href="#contactContainer" class="link">Contact</a></li>
-                    <li><i class="fa fa-times closeToggle"></i></li>
-                </ul>
-            </nav>
-        </header>
         <section id="index">
             <div class="container">
                 <h1>
@@ -160,15 +163,17 @@
                         love to help with it.
                     </p>
                 </div>
-                <form action="https://formspree.io/f/xpzbqlab" method="POST" autocomplete="off" name="form" id="formContainer">
+                <form action="https://formspree.io/f/xpzbqlab" method="POST" autocomplete="off" name="form"
+                    id="formContainer" target="_blank">
                     <label class="label" for="username">Username</label>
                     <input id="username" class="inputItem" name="username" type="text" maxlength="30"
                         placeholder="Full Name" required />
                     <label class="label" for="email">Email</label>
                     <input id="email" class="inputItem" name="email" type="email" value=""
-                        placeholder="johndoe@gmail.com" required/>
+                        placeholder="johndoe@gmail.com" required />
                     <label class="label" id="inputMessage" for="msg">Message</label>
-                    <textarea name="msg" id="msg" class="inputMessageBox" cols="20" rows="10" maxlength="500" placeholder="Write your message here..." required></textarea>
+                    <textarea name="msg" id="msg" class="inputMessageBox" cols="20" rows="10" maxlength="500"
+                        placeholder="Write your message here..." required></textarea>
                     <input class="get-touch-btn" id="submitForm" type="submit" value="Get It Touch">
                 </form>
             </div>
