@@ -4,7 +4,6 @@ const Toggle = document.querySelector('.toggle');
 const closeToggle = document.querySelector('.closeToggle');
 const popup = document.querySelector('.popupWindow');
 const navbar = document.querySelector('.navbar');
-const { body } = document;
 // Define show function
 function show() {
   navItems.style.display = 'flex';
