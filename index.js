@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 const navItems = document.querySelector('.nav-items');
 const Toggle = document.querySelector('.toggle');
 const closeToggle = document.querySelector('.closeToggle');
