@@ -1,4 +1,4 @@
-/* eslint-disable no-return-assign */
+/* eslint-disable func-names */
 const navItems = document.querySelector('.nav-items');
 const Toggle = document.querySelector('.toggle');
 const closeToggle = document.querySelector('.closeToggle');
@@ -87,7 +87,8 @@ projectContainer.innerHTML = '';
 
 Projects.map((project) => {
   let techs = '';
-  project.techUse.map((tech) => techs += `<li>${tech}</li>`);
+  // eslint-disable-next-line array-callback-return
+  project.techUse.forEach((tech) => { techs += `<li>${tech}</li>`; });
   projectContainer.innerHTML += `
   <div class="cardContainer">
                 <div class="imgDescription">
@@ -273,9 +274,9 @@ getLink();
 function validateForm() {
   if (document.form.name.value === '') {
     document.form.name.focus();
-  } else if (document.form.email.value === '') {
+  } if (document.form.email.value === '') {
     document.form.email.focus();
-  } else if (document.form.message === '') {
+  } if (document.form.message === '') {
     document.form.message.focus();
   }
   return true;
