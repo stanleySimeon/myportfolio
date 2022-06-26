@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-return-assign */
 const navItems = document.querySelector('.nav-items');
 const Toggle = document.querySelector('.toggle');
 const closeToggle = document.querySelector('.closeToggle');
@@ -85,9 +85,9 @@ const Projects = [
 const projectContainer = document.getElementById('works-container');
 projectContainer.innerHTML = '';
 
-Projects.forEach((project) => {
+Projects.map((project) => {
   let techs = '';
-  project.techUse.forEach((tech) => { techs += `<li>${tech}</li>`; });
+  project.techUse.map((tech) => techs += `<li>${tech}</li>`);
   projectContainer.innerHTML += `
   <div class="cardContainer">
                 <div class="imgDescription">
@@ -123,6 +123,8 @@ Projects.forEach((project) => {
       navbar.style.display = 'none';
     });
   });
+  techs = '';
+  return projectContainer;
 });
 
 Projects.forEach((project) => {
