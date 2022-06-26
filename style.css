@@ -93,7 +93,7 @@
 
   /* End of the navigation bar */
 
-  #index {
+  #home {
     background-image: url("./asset/deskBackground-Home.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@
     align-items: center;
   }
 
-  #index .container {
+  #home .container {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -151,7 +151,7 @@
     cursor: pointer;
   }
 
-  /* End of the index page */
+  /* End of the home page */
 
   #works-container {
     min-height: 100vh;
@@ -618,7 +618,7 @@
 
   /* End of the navigation bar */
 
-  #index {
+  #home {
     background-image: url("./asset/deskBackground-Home.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -629,7 +629,7 @@
     align-items: center;
   }
 
-  #index .container {
+  #home .container {
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -689,7 +689,7 @@
     transform: scale(1.1);
   }
 
-  /* End of the index page */
+  /* End of the home page */
 
   #works-container {
     min-height: 100vh;

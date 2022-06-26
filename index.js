@@ -85,7 +85,7 @@ const Projects = [
 const projectContainer = document.getElementById('works-container');
 projectContainer.innerHTML = '';
 
-Projects.map((project) => {
+Projects.forEach((project) => {
   let techs = '';
   // eslint-disable-next-line array-callback-return
   project.techUse.forEach((tech) => { techs += `<li>${tech}</li>`; });
